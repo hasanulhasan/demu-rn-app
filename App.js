@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import BannerView from './Components/BannerView';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text>Demu App</Text>
-        <Text>icon</Text>
+        <Text style={styles.headerText}>Demu App</Text>
+        <Text style={styles.headerText}>icon</Text>
       </View>
+      <BannerView></BannerView>
+      <View style={styles.bottomBorder} />
       <StatusBar style="auto" />
     </View>
   );
@@ -19,7 +22,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   header: {
-    backgroundColor: "B90A0A",
-    padding: 25
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: "#b71540",
+    padding: 25,
+    color: "white"
+  },
+  bottomBorder: {
+    marginBottom: 30,
+    borderBottomColor: '#909090',
+    borderBottomWidth: 3,
+    marginLeft: 22,
+    marginRight: 22,
+  },
+  headerText: {
+    fontSize: 20,
+    color: 'white'
   }
 });
