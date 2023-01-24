@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import BannerView from './Components/BannerView';
+import UserInfo from './Components/UserInfo';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       </View>
       <BannerView></BannerView>
       <View style={styles.bottomBorder} />
+      <UserInfo></UserInfo>
       <StatusBar style="auto" />
     </View>
   );
