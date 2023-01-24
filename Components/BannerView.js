@@ -6,9 +6,9 @@ export default function BannerView() {
     <View style={styles.container}>
       <View>
         <Text style={styles.titleText}>Total Payable:</Text>
-        <Text style={{ color: 'red', fontSize: 30, fontWeight: "600" }}>0.00</Text>
+        <Text style={{ color: 'red', letterSpacing: 3, fontSize: 30, fontWeight: "600" }}>0.00</Text>
         <Text style={styles.titleText}>Total Paid:</Text>
-        <Text style={{ color: 'green', fontSize: 30, fontWeight: "600" }}>0.00</Text>
+        <Text style={{ color: 'green', letterSpacing: 3, fontSize: 30, fontWeight: "600" }}>0.00</Text>
       </View>
       <View style={{ borderWidth: 2, height: '60%', borderColor: '#909090' }} />
       <View style={{ paddingRight: 25 }}>
