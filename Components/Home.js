@@ -15,7 +15,7 @@ export default function Home() {
       <View style={styles.bottomBorder} />
       <UserInfo></UserInfo>
       <View style={styles.infoText}>
-        <Text style={{ fontSize: 16 }}>You don't have any Arrears now.<br /> To add new Arrears click on Puls icon and fill the necessary information</Text>
+        <Text style={{ fontSize: 16 }}>You don't have any Arrears now. To add new Arrears click on Puls icon and fill the necessary information</Text>
       </View>
       <View style={styles.plusIcon}>
         <Text style={styles.plusIconInternal}>+</Text>
@@ -32,9 +32,9 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: "#B90A0A",
+    backgroundColor: '#B90A0A',
     padding: 25,
-    color: "white"
+    color: 'white'
   },
   bottomBorder: {
     marginBottom: 30,
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   plusIconInternal: {
     backgroundColor: 'red',
-    borderRadius: "50%",
+    // borderRadius: '50%',
     padding: 10,
     paddingHorizontal: 20,
     fontWeight: 'bold',
