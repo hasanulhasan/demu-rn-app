@@ -1,26 +1,33 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import BannerView from './BannerView';
 import UserInfo from './UserInfo';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 export default function Home() {
   return (
 
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Demu App</Text>
-        <Text style={styles.headerText}>search</Text>
+        <Text style={styles.headerText}><Icon name="search" size={30} color="#ffffff" /></Text>
       </View>
       <BannerView></BannerView>
       <View style={styles.bottomBorder} />
       <UserInfo></UserInfo>
       <View style={styles.infoText}>
-        <Text style={{ fontSize: 16 }}>You don't have any Arrears now. To add new Arrears click on Puls icon and fill the necessary information</Text>
+        <Text style={{
+          textAlign: 'center', fontSize: 16
+        }}>You don't have any Arrears now. To add new Arrears click on Puls icon and fill the necessary information</Text>
       </View>
       <View style={styles.plusIcon}>
-        <Text style={styles.plusIconInternal}>+</Text>
+        <TouchableOpacity>
+
+          <Icon style={styles.plusIconInternal} name="plus" size={30} color="#ffffff" />
+        </TouchableOpacity>
       </View>
-      <StatusBar style="auto" />
+      {/* <StatusBar style="auto" /> */}
     </View>
   )
 }
@@ -50,7 +57,6 @@ const styles = StyleSheet.create({
   infoText: {
     marginVertical: 100,
     marginHorizontal: 60,
-    textAlign: 'center',
   },
   plusIcon: {
     flexDirection: 'row',
@@ -59,10 +65,8 @@ const styles = StyleSheet.create({
   },
   plusIconInternal: {
     backgroundColor: 'red',
-    // borderRadius: '50%',
+    borderRadius: 35,
     padding: 10,
-    paddingHorizontal: 20,
-    fontWeight: 'bold',
-    fontSize: 30
+    paddingHorizontal: 15
   }
 });
