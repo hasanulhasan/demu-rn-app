@@ -1,9 +1,10 @@
 import Home from "./Components/Home";
 
+function App() {
 
-export default function App() {
   return (
     <Home></Home>
   );
 }
 
+export default App;
